@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/webhook/github",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ],
+  "env": {
+    "DISCORD_TOKEN": "@discord_token",
+    "DISCORD_CHANNEL_ID": "@discord_channel_id",
+    "GITHUB_ACCESS_TOKEN": "@github_access_token",
+    "GITHUB_USERNAME": "aspauldingcode",
+    "GITHUB_REPOSITORY": "glow-feedback"
+  }
+}
