@@ -16,10 +16,11 @@
     }
   ],
   "env": {
-    "DISCORD_TOKEN": "@discord_token",
-    "DISCORD_CHANNEL_ID": "@discord_channel_id",
-    "GITHUB_ACCESS_TOKEN": "@github_access_token",
+    "DISCORD_TOKEN": "$DISCORD_TOKEN",
+    "DISCORD_CHANNEL_ID": "$DISCORD_CHANNEL_ID", 
+    "GITHUB_ACCESS_TOKEN": "$GITHUB_ACCESS_TOKEN",
     "GITHUB_USERNAME": "aspauldingcode",
     "GITHUB_REPOSITORY": "glow-feedback"
-  }
+  },
+  "outputDirectory": "api"
 }
