@@ -99,6 +99,16 @@
             echo ""
             echo "📦 Installing dependencies..."
             pnpm install
+            
+            echo ""
+            echo "🔨 Building project..."
+            pnpm build
+            
+            if [ -d "dist" ]; then
+              echo "✅ Build completed successfully - dist directory created"
+            else
+              echo "❌ Build failed - dist directory not found"
+            fi
           '';
 
           # Environment variables for development
