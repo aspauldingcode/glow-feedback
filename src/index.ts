@@ -1,4 +1,8 @@
 import { initDiscord } from "./discord/discord";
 import { initGithub } from "./github/github";
+
+// Initialize Discord bot
 initDiscord();
-initGithub();
+
+// Export the GitHub webhook handler for Vercel
+module.exports = initGithub();
