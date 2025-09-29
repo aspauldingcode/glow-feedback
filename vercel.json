@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "nix develop --command pnpm build",
+  "buildCommand": "pnpm build",
   "functions": {
     "api/index.js": {
       "maxDuration": 30
